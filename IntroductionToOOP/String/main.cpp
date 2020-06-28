@@ -17,7 +17,7 @@ public:
 	}
 	const char* get_str()const
 	{
-		return this->str;
+		return this->str;;
 	}
 	char* get_str()
 	{
