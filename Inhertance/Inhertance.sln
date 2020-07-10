@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inhertance", "Inhertance\In
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Academy", "Academy\Academy.vcxproj", "{C1B2D00A-43BF-43CF-91D3-373A6ECA0C9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TheZoo", "TheZoo\TheZoo.vcxproj", "{C781B827-5852-47C8-AEF4-2E619449BACA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometry", "Geometry\Geometry.vcxproj", "{8E712365-12E2-49E8-8A8E-AE59DDE8B010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +35,22 @@ Global
 		{C1B2D00A-43BF-43CF-91D3-373A6ECA0C9F}.Release|x64.Build.0 = Release|x64
 		{C1B2D00A-43BF-43CF-91D3-373A6ECA0C9F}.Release|x86.ActiveCfg = Release|Win32
 		{C1B2D00A-43BF-43CF-91D3-373A6ECA0C9F}.Release|x86.Build.0 = Release|Win32
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Debug|x64.ActiveCfg = Debug|x64
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Debug|x64.Build.0 = Debug|x64
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Debug|x86.ActiveCfg = Debug|Win32
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Debug|x86.Build.0 = Debug|Win32
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Release|x64.ActiveCfg = Release|x64
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Release|x64.Build.0 = Release|x64
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Release|x86.ActiveCfg = Release|Win32
+		{C781B827-5852-47C8-AEF4-2E619449BACA}.Release|x86.Build.0 = Release|Win32
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Debug|x64.ActiveCfg = Debug|x64
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Debug|x64.Build.0 = Debug|x64
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Debug|x86.Build.0 = Debug|Win32
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Release|x64.ActiveCfg = Release|x64
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Release|x64.Build.0 = Release|x64
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Release|x86.ActiveCfg = Release|Win32
+		{8E712365-12E2-49E8-8A8E-AE59DDE8B010}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
