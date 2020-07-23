@@ -153,18 +153,29 @@ namespace Geometry
 			return this->side3 = side3;
 		}
 
+		Triangle()
+		{
+			side1 = side2 = side3 = 1;
+			cout << "TriaDefault:\t" << this << endl;
+		}
 		Triangle(double side1, double side2, double side3)
+		{
+			operator()(side1, side2, side3);
+			cout << "TriaConstructor:\t" << this << endl;
+		}
+		~Triangle()
+		{
+			cout << "TriaDestructor:\t" << this << endl;
+		}
+
+		Triangle& operator()(double side1, double side2, double side3)
 		{
 			set_side1(side1);
 			set_side2(side2);
 			set_side3(side3);
 			if (side3 >= (side1 + side2) || side1 >= (side2 + side3) || side2 >= (side1 + side3))
 				throw exception("Triangle bad side");
-			cout << "TriaConstructor:\t" << this << endl;
-		}
-		~Triangle()
-		{
-			cout << "TriaDestructor:\t" << this << endl;
+			return *this;
 		}
 
 		double area()const
@@ -195,15 +206,19 @@ void main()
 	cout << "Rectangle perimeter:\t" << rect.perimeter() << endl;
 	rect.draw();
 
+	//Geometry::Triangle trgl(5, 5, 5);
+	Geometry::Triangle trgl;
 	try 
 	{
-		Geometry::Triangle trgl(5, 5, 5);
+		trgl(5, 5, 5);
 		cout << "Triangle area:\t" << trgl.area() << endl;
 		cout << "Triangle perimeter:\t" << trgl.perimeter() << endl;
-		
 	}
 	catch(const exception& e)
 	{
 		cerr << e.what() << endl;
+	}
+	catch(...)
+	{
 	}
 }
